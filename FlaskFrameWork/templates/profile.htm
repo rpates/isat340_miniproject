@@ -1,0 +1,50 @@
+<!doctype html/>
+
+<html>
+
+<head>
+
+<title> </title>
+<style type="text/css">body { background-color: lightcyan;}</style>
+</head>
+{% if success %}
+	<h3 style="color:magenta;">Data successfully submitted to the database!</h3>
+{% endif %}
+<body>
+<fieldset>
+	<legend>Profile information:</legend>
+<form action="" method="post">
+<Table Border=1>
+
+<p> Please <strong>update</strong> your profile information on the following form <br>
+	<em>All fields are required and must contain valid information</em>
+<p>
+<TR>
+	<TD>Member ID:</TD> <TD><input type="text" name="memberID" value="{{memberID}}" readonly />
+</TD>
+<TR>
+	<TD>First Name:</TD> <TD><input type="text" name="firstname" value="{{firstname}}"/></TD>
+</TR>
+<TR>
+	<TD>Last Name:</TD> <TD><input type = "text" name="lastname" value="{{lastname}}"/></TD>
+</TR>
+<TR>
+	<TD>Age:</TD> <TD><input type = "integer" name="age" value="{{age}}"/></TD>
+</TR>
+<TR>
+	<TD>Email:</TD> <TD><input type = "text" name="email" value="{{email}}"/></TD>
+</TR>
+<TR>
+	<TD><img src="{{url_for('static', filename = 'rp.jpg')}}"width="110" height="130"></TD>
+	<TD><textarea name="bio" rows=4 cols=50>{{Bio}}</textarea></TD>
+</TR>
+<TR>
+	<TD><input type="submit" value="Click to Update"></TD>
+</Table>
+<br>
+<a href ="/view_all_celebs"> Click to view all of the celebrities </a> 
+<br>
+<a href ="/view_one_celeb"> Click to view one of the celebrities </a> 
+</body>
+   </fieldset>
+</form>

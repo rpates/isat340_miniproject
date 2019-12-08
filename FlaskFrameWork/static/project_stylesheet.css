@@ -1,0 +1,48 @@
+body
+{
+background-image: url("rc.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1
+{
+color: white;
+text-align:center;
+}
+p
+{font-family:"TimesNew Roman";
+font-size:20px;
+}
+input[type=text] 
+{
+ border: 2px solid white;
+ border-radius: 4px;
+}
+input[type=password] 
+{
+border: 2px solid white;
+border-radius: 4px;
+}
+input[type=text] 
+{
+background-color: white;
+color: red;
+}
+input[type=password] 
+{
+background-color: white;
+color: red;
+}
+input[type=text] 
+{
+text-align:center;
+}
+input[type=password]
+{
+text-align:center;
+}
+form 
+{
+width: 450px;
+margin: 0 auto;
+}
